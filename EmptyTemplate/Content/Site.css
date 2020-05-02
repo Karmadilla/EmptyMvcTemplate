@@ -1,0 +1,78 @@
+﻿* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    *:before,
+    *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+html {
+    height: 100%;
+}
+
+input, textarea, select {
+    border: 0;
+    border-radius: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    position: relative;
+    padding-bottom: 18px;
+    background-color: #eee;
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
+    background-color: #fff;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+
+@media (min-width: 769px) {
+    .container {
+        width: 750px;
+    }
+
+    .show-over-768 {
+        display: none;
+    }
+
+    .hide-side-margins-over-768 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hide-under-768 {
+        display: none;
+    }
+}
