@@ -142,6 +142,12 @@
     <Folder Include="Models\" />
     <Folder Include="Providers\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EmptyTemplate.Common\EmptyTemplate.Common.csproj">
+      <Project>{4e623b3c-e702-4df4-98d3-64dec969de59}</Project>
+      <Name>EmptyTemplate.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
