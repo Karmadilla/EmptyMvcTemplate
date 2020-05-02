@@ -14,8 +14,12 @@
     @Styles.Render("~/content/css")
 </head>
 <body class="container">
-    <header class="container">
-        header
+    <header class="container flex-row">
+        <div class="flex-1">header</div>
+        
+        <div>
+            @Html.ActionLink("Login", "Login", "Account")
+        </div>
     </header>
     @RenderBody()
     <footer class="container">
