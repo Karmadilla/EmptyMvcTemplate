@@ -55,6 +55,10 @@
       <Project>{3504367C-2251-410C-8F9B-4558C1D891D5}</Project>
       <Name>EmptyTemplate.Business</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EmptyTemplate.Common\EmptyTemplate.Common.csproj">
+      <Project>{4E623B3C-E702-4DF4-98D3-64DEC969DE59}</Project>
+      <Name>EmptyTemplate.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -1,0 +1,14 @@
+﻿@model EmptyTemplate.Models.Account.LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+    @Html.TextBoxFor(x => x.Email)
+    @Html.TextBoxFor(x => x.Password)
+    <button type="submit">Login</button>
+}

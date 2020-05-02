@@ -16,9 +16,16 @@
 <body class="container">
     <header class="container flex-row">
         <div class="flex-1">header</div>
-        
+
         <div>
-            @Html.ActionLink("Login", "Login", "Account")
+            @if (User.Identity.IsAuthenticated)
+            {
+                @Html.ActionLink("Logout", "Logout", "Account")
+            }
+            else
+            {
+                @Html.ActionLink("Login", "Login", "Account")
+            }
         </div>
     </header>
     @RenderBody()

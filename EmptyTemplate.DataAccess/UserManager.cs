@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using EmptyTemplate.Business;
+using EmptyTemplate.Common;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -18,7 +19,7 @@ namespace EmptyTemplate.DataAccess
 
             IEnumerable<User> result;
 
-            using (SqlConnection con = new SqlConnection())
+            using (SqlConnection con = new SqlConnection(ConfigurationHelper.GetSqlConnectionString()))
             {
                 result = con.Query<User>(@"
                 SELECT *
